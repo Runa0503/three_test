@@ -23,6 +23,16 @@
         </div>
     </div>
     </main>
+    <script>
+      // Ajaxリクエストを送信
+      $.ajax({
+          url: "https://drdprht7a8.execute-api.us-east-2.amazonaws.com/01/assessment",
+          type: "POST",
+          error: function (error) {
+              console.error("データの取得に失敗しました: " + error);
+          }
+      });
+    </script>
     <script type="module" src="<https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js>"></script>
     <script type="module" src="script.js"></script>
   </body>
